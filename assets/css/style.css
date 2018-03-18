@@ -1,5 +1,5 @@
 body {
-    background: url("assets/img/Numbers.jpg");
+    background: url("/assets/img/numbers.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -13,7 +13,6 @@ body {
 
 h1, h4 {
     color: brown;
-
 }
 
 #guess-input {
