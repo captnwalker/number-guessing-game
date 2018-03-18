@@ -1,18 +1,23 @@
 body {
     background: url(../img/numbers-bg.jpg);
+    background-color: rgb(218, 227, 250);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 .container {
-    margin-top: 10rem;
-    background: rgba(145, 245, 142, 0.5);
+    margin-top: 8rem;
+    background: rgba(142, 224, 245, 0.5);
     border-radius: 2em;
     text-align: center;
 }
 
 h1, h4 {
     color: brown;
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 #guess-input {
@@ -28,4 +33,5 @@ h1, h4 {
     border-radius: 1.5em;
     border-width: 3px;
     border-color: rgb(123, 123, 248);
+    color: brown;
 }

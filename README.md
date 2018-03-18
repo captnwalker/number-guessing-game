@@ -22,6 +22,7 @@ This app is deployed and can be played by following this link [Random-Number-Gue
 * HTML5
 * CSS3
 * SkeletonCSS
+* Google Fonts
 
 #### License
 
