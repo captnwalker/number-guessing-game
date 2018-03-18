@@ -18,7 +18,7 @@ This app is deployed and can be played by following this link [Random-Number-Gue
 
 ### Screenshot of this Project
 
-![Random-Number-Guessing-Game](https://raw.github.com/captnwalker/number-guessing-game/master/assets/img/guess.gif "Random-Number-Guessing-Game")
+![Random-Number-Guessing-Game](https://raw.github.com/captnwalker/number-guessing-game/master/assets/img/guess5.gif "Random-Number-Guessing-Game")
 
 ### Technologies
 
