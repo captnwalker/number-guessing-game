@@ -1,3 +1,32 @@
 body {
-    background: rgb(241, 224, 199);
+    background: url("/assets/img/Numbers.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    margin-top: 10rem;
+    background: rgba(145, 245, 142, 0.5);
+    border-radius: 2em;
+    text-align: center;
+}
+
+h1, h4 {
+    color: brown;
+
+}
+
+#guess-input {
+    background: rgb(243, 243, 119);
+    font-size: 1.4em;
+    border-radius: 1.5em;
+    border-width: 3px;
+}
+
+#guess-btn {
+    background: rgb(182, 182, 252);
+    font-size: 1.1em;
+    border-radius: 1.5em;
+    border-width: 3px;
+    border-color: rgb(123, 123, 248);
 }

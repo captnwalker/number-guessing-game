@@ -1,7 +1,7 @@
 // Game values
 let min = 1,
     max = 10,
-    winningNum = 2,
+    winningNum = getRandomNum(min, max)
     guessesLeft = 3;
 
 // UI elements
@@ -16,13 +16,20 @@ const   game = document.querySelector('#game'),
 minNum.textContent = min;
 maxNum.textContent = max;
 
+// Play again listener
+game.addEventListener('mousedown', function(e) {
+    if(e.target.className === 'play-again') {
+        window.location.reload();
+    }
+});
+
 // Listener
 guessBtn.addEventListener('click', function() {
     let guess = parseInt(guessInput.value);
 
     // Validation
     if(isNaN(guess) || guess < min || guess > max) {
-        setMessage(`Please enter a number between ${min} and ${max}`, 'red');
+        setMessage(`Please enter a Number between ${min} and ${max}`, 'red');
     }
 
     // Check for winner
@@ -38,13 +45,12 @@ guessBtn.addEventListener('click', function() {
 
         if(guessesLeft === 0) {
 
-        setMessage(`Game Over! You Lost. The mystery number was ${winningNum}`);
+        gameOver(false, `Game Over! You Lost. The Mystery Number was ${winningNum}`);
 
         } else {
 
         // Change border color
         guessInput.style.borderColor = 'red';
-        // Set message
 
         // Clear input
         guessInput.value = '';
@@ -59,7 +65,7 @@ guessBtn.addEventListener('click', function() {
 function gameOver(won, msg){
     let color;
     won === true ? color = 'green' : color = 'red';
-  
+
     // Disable input
     guessInput.disabled = true;
     // Change border color
@@ -68,8 +74,17 @@ function gameOver(won, msg){
     message.style.color = color;
     // Set message
     setMessage(msg);
+
+    // Play again
+    guessBtn.value = 'Click to Play Again';
+    guessBtn.className +=  'play-again'
   }
-  
+
+// Get random number
+function getRandomNum(min, max) {
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
 // Set message
 function setMessage(msg, color) {
     message.style.color = color;
