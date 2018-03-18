@@ -45,7 +45,7 @@ guessBtn.addEventListener('click', function() {
 
         if(guessesLeft === 0) {
 
-        gameOver(false, `Game Over! You Lost. The Mystery Number was ${winningNum}`);
+        gameOver(false, `Game Over! The Mystery Number was ${winningNum}`);
 
         } else {
 
