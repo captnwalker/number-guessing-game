@@ -6,7 +6,7 @@
 
 ### How to Use
 
-Clone down repo and open in "live server"
+This app is deployed and can be played by following this link [Random-Number-Guessing-Game]( https://captnwalker.github.io/number-guessing-game/)
 
 ### Game Function
 
